@@ -1,0 +1,24 @@
+
+
+#window {
+	border-radius: 10px;
+	border: 2px solid @color6;
+}
+
+#text {
+	color: #8fbcbb;
+	text-shadow: 1px 1px 1px @background;
+}
+
+#outer-box {
+	padding: 5px;
+	margin: 10px
+}
+
+#inner-box {
+	padding-top: 5px;
+}
+
+#img {
+	margin-right: 5px;
+}
