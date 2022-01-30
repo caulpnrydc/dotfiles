@@ -17,7 +17,7 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=**/.git/*
 
-set colorcolumn=80
+set colorcolumn=100
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
@@ -39,6 +39,7 @@ if executable('rg')
     let g:rg_derive_root='true'
 endif
 
+let g:ctrpl_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let mapleader = " "
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
@@ -68,4 +69,3 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
-
