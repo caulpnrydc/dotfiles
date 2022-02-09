@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-languages=`echo "golang lua python" | tr ' ' '\n'`
+languages=`echo "golang lua python rust cpp java" | tr ' ' '\n'`
 core_utils=`echo "xargs find mv sed awk" | tr ' ' '\n'`
 
 selected=`printf "$languages\n$core_utils" | fzf`
