@@ -49,16 +49,16 @@ let g:ctrlp_use_caching = 0
 
 " NOTE: Use comand ':verbose imap <key>' to make sure the key is not mapped
 " by any other plugin before putting it into this config
-inoremap <silent><expr> <TAB>
-            \ pumvisibile() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<TAB>" :
-            \ coc#refresh
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1] =~# '\s'
-endfunction
+"inoremap <silent><expr> <TAB>
+"            \ pumvisibile() ? "\<C-n>" :
+"            \ <SID>check_back_space() ? "\<TAB>" :
+"            \ coc#refresh
+"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"
+"function! s:check_back_space() abort
+"    let col = col('.') - 1
+"    return !col || getline('.')[col - 1] =~# '\s'
+"endfunction
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
